@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Sharma | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <h2 class="logo">Naman<span>.</span></h2>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- JS interaction 1: dark / light mode -->
+        <button id="theme-btn">Light Mode</button>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <p class="small-text">Hello there, I'm</p>
+        <h1>Naman <span>Sharma</span></h1>
+        <h3>B.Tech CS Student &amp; Aspiring Web Developer</h3>
+        <p class="intro">
+            I build things with HTML, CSS and JavaScript, and I play games and watch movies
+            far more than my screen time report would like to admit.
+        </p>
+        <a href="#projects" class="btn">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="card">
+                <h3>Personal</h3>
+                <p><b>Name:</b> Naman Sharma</p>
+                <p><b>From:</b> Hathras, Uttar Pradesh</p>
+                <p><b>Interests:</b> Gaming, Movies</p>
+            </div>
+            <div class="card">
+                <h3>Academic</h3>
+                <p><b>Course:</b> B.Tech in Computer Science</p>
+                <p><b>College:</b> KIET, Ghaziabad</p>
+                <p><b>Focus:</b> Web development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>B.Tech in Computer Science</h3>
+                <p>KIET, Ghaziabad</p>
+                <p class="muted">2026 - Present</p>
+            </div>
+            <div class="card">
+                <h3>Schooling</h3>
+                <p>DPS, Hathras</p>
+                <p class="muted"> till 2025 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="about-grid">
+            <div class="card">
+                <h3>Technical</h3>
+                <ul class="tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (basics)</li>
+                    <li>CSS Grid &amp; Flexbox</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Non-Technical</h3>
+                <ul class="tags">
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                    <li>Problem Solving</li>
+                    <li>Quick Learner</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>TechFest Page</h3>
+                <p>A multi-element HTML page using lists, tables, media, forms and semantic tags.</p>
+                <p class="muted">HTML, CSS</p>
+            </div>
+            <div class="card">
+                <h3>CSS Grid Layouts</h3>
+                <p>Practice layouts with auto-fit columns, spans and gaps.</p>
+                <p class="muted">CSS Grid</p>
+            </div>
+            <div class="card">
+                <h3>Movie Search &amp; Recommendation</h3>
+                <p>Browse movies by genre, search, and save favourites.</p>
+                <p class="muted">In progress</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="center">Email: <a href="mailto:2630btech1953@kiet.edu">2630btech1953@kiet.edu</a></p>
+
+        <!-- JS interaction 2: form validation -->
+        <form id="contact-form" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <span class="error" id="name-error"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com">
+            <span class="error" id="email-error"></span>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Say something..."></textarea>
+            <span class="error" id="message-error"></span>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p id="success" class="success"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Naman Sharma</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
